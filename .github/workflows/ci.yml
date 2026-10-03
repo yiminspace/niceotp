@@ -17,7 +17,7 @@ jobs:
           POSTGRES_DB: niceotp_test
         ports: ['5432:5432']
         options: >-
-          --health-cmd 'pg_isready -U niceotp -d niceotp_test'
+          --health-cmd "pg_isready -U niceotp -d niceotp_test"
           --health-interval 5s --health-timeout 3s --health-retries 10
     steps:
       - uses: actions/checkout@v4
@@ -43,7 +43,7 @@ jobs:
           python3 scripts/dex_smoke.py
         env:
           TEST_DATABASE_URL: postgres://niceotp:test-only@127.0.0.1:5432/niceotp_test
-      - if: always()
+      - if: always() && hashFiles('deploy/compose.local.yml') != ''
         run: docker compose -f deploy/compose.local.yml down
   cli:
     strategy:
