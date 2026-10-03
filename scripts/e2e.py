@@ -172,6 +172,7 @@ def main():
             assert cli("b","sync")["conflicts"]==1
             cli("b","resolve",item,"--use-version","local",ok=False)
             cli("b","resolve",item,"--use-version","remote");assert cli("b","list")["items"]==[]
+            assert sql("SELECT count(*) FROM information_schema.columns WHERE table_schema='"+schema+"' AND table_name='mutations' AND column_name='request'",isolated)=="0"
             report("trash, restore, permanent tombstone and stale-client resurrection prevention")
             # Keep one live record for recovery/backup tests.
             item2=cli("a","add",input=uri)["id"];cli("a","sync")
@@ -245,7 +246,7 @@ def main():
             old=session("restored");cli("restored","logout");assert request(base,"/v1/vault",token=old)[0]==401
             report("restore into another account and revoke session")
             # Secret canaries must be absent from persistent server and client state.
-            dump=subprocess.check_output([os.environ.get("PG_DUMP","pg_dump"),isolated,"--schema",schema,"--data-only"],text=True,stderr=subprocess.PIPE)
+            dump="\n".join(sql(f"SELECT row_to_json(t)::text FROM {table} t",isolated) for table in ["accounts","sessions","vaults","items","mutations"])
             for canary in ["CanaryIssuer","canary-account","GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ",password.read_text(),recovery.read_text()]:
                 assert canary not in dump and canary not in log.read_text()
                 for path in temp.glob("*/state.json"):assert canary not in path.read_text()

@@ -133,8 +133,7 @@ TEST_DATABASE_URL='postgres://niceotp:local-development-only@127.0.0.1:55439/nic
   .local/test-env/bin/python scripts/e2e.py
 ```
 
-`psql` and `pg_dump` are needed for E2E; override their paths with `PSQL` and
-`PG_DUMP`. The script creates and drops its own unique PostgreSQL schema. It
+`psql` is needed for E2E; override its path with `PSQL`. The script creates and drops its own unique PostgreSQL schema. It
 starts a test-only RSA OIDC provider and real server/CLI processes. No real user
 credentials or external identity services are needed. CI runs these checks with
 PostgreSQL 17 and builds CLI artifacts for macOS/Linux.

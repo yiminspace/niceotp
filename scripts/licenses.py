@@ -12,6 +12,7 @@ root=Path(__file__).resolve().parents[1]
 metadata=json.loads(subprocess.check_output(['cargo','metadata','--locked','--format-version','1'],cwd=root))
 packages=sorted((p for p in metadata['packages'] if p.get('source')),key=lambda p:(p['name'],p['version']))
 texts={};listing=[];missing=[]
+upstream=json.loads((root/'licenses/upstream-notices.json').read_text())
 for p in packages:
     base=Path(p['manifest_path']).parent
     candidates=[]
@@ -28,7 +29,11 @@ for p in packages:
         key=hashlib.sha256(text.encode()).hexdigest()[:16]
         texts[key]=text
         refs.append(key)
+    extra=upstream.get(p['name']+'@'+p['version'])
+    if not refs and extra:
+        text=extra['text'];key=hashlib.sha256(text.encode()).hexdigest()[:16];texts[key]=text;refs.append(key)
     label=f"{p['name']} {p['version']} — {p.get('license') or 'SEE LICENSE FILE'}"
+    if extra:label+='\nUpstream notice: '+extra['source']
     listing.append(label+'\nSource: https://crates.io/crates/'+p['name']+'/'+p['version']+'\nBundled notice IDs: '+(', '.join(dict.fromkeys(refs)) or 'No standalone file in package; see source declaration')+'\n')
     if not refs:missing.append(p['name'])
 header='''NiceOTP third-party dependency license inventory

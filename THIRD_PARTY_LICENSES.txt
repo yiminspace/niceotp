@@ -265,8 +265,9 @@ Source: https://crates.io/crates/defmt-macros/1.1.1
 Bundled notice IDs: 8173d5c29b4f956d, 2710a622a896bba6
 
 defmt-parser 1.0.0 — MIT OR Apache-2.0
+Upstream notice: https://raw.githubusercontent.com/knurling-rs/defmt/4a8cdb44891ed57b8ff5a023b6bec7137c48708f/LICENSE-MIT
 Source: https://crates.io/crates/defmt-parser/1.0.0
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 2710a622a896bba6
 
 der 0.7.10 — Apache-2.0 OR MIT
 Source: https://crates.io/crates/der/0.7.10
@@ -281,8 +282,9 @@ Source: https://crates.io/crates/digest/0.10.7
 Bundled notice IDs: a9040321c3712d8f, 9e0dfd2dd4173a53
 
 dispatch2 0.3.1 — Zlib OR Apache-2.0 OR MIT
+Upstream notice: https://raw.githubusercontent.com/madsmtm/objc2/8852b424193ca41602281b3d7540d7c8ed51e49a/LICENSE.md
 Source: https://crates.io/crates/dispatch2/0.3.1
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 7f976f7e9cb2d87d
 
 displaydoc 0.2.7 — MIT OR Apache-2.0
 Source: https://crates.io/crates/displaydoc/0.2.7
@@ -573,20 +575,23 @@ Source: https://crates.io/crates/jiff-tzdb-platform/0.1.3
 Bundled notice IDs: 01c266bced4a434d, 0f96a83840e146e4, 7e12e5df4bae12cb
 
 jni 0.22.4 — MIT OR Apache-2.0
+Upstream notice: https://raw.githubusercontent.com/jni-rs/jni-rs/5ae9458a4ec44c5318f37ddc7569c1d4ae8a69e7/LICENSE-MIT
 Source: https://crates.io/crates/jni/0.22.4
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: fea1d5bf3dd71605
 
 jni-macros 0.22.4 — MIT OR Apache-2.0
+Upstream notice: https://raw.githubusercontent.com/jni-rs/jni-rs/33045a124105c939d1e2cbdcb5a39e5d868ffa03/LICENSE-MIT
 Source: https://crates.io/crates/jni-macros/0.22.4
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: fea1d5bf3dd71605
 
 jni-sys 0.4.1 — MIT OR Apache-2.0
 Source: https://crates.io/crates/jni-sys/0.4.1
 Bundled notice IDs: c6596eb7be8581c1, 1d85bd754b04ceec
 
 jni-sys-macros 0.4.1 — MIT OR Apache-2.0
+Upstream notice: https://raw.githubusercontent.com/jni-rs/jni-sys/64d77b7a5f119d7b55b4e2c169a4668067ff59e6/LICENSE-MIT
 Source: https://crates.io/crates/jni-sys-macros/0.4.1
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 1d85bd754b04ceec
 
 js-sys 0.3.106 — MIT OR Apache-2.0
 Source: https://crates.io/crates/js-sys/0.3.106
@@ -665,8 +670,9 @@ Source: https://crates.io/crates/mio/1.2.3
 Bundled notice IDs: 07919255c7e04793
 
 ndk-context 0.1.1 — MIT OR Apache-2.0
+Upstream notice: https://raw.githubusercontent.com/rust-windowing/android-ndk-rs/10f2ba388fca20f7349996ebae26ccda7a6fda5c/LICENSE-MIT
 Source: https://crates.io/crates/ndk-context/0.1.1
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 508a77d2e7b51d98
 
 nu-ansi-term 0.50.3 — MIT
 Source: https://crates.io/crates/nu-ansi-term/0.50.3
@@ -701,24 +707,29 @@ Source: https://crates.io/crates/oauth2/5.0.0
 Bundled notice IDs: a60eea8175145316, 378f5840b258e277
 
 objc2 0.6.4 — MIT
+Upstream notice: https://raw.githubusercontent.com/madsmtm/objc2/8852b424193ca41602281b3d7540d7c8ed51e49a/LICENSE.md
 Source: https://crates.io/crates/objc2/0.6.4
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 7f976f7e9cb2d87d
 
 objc2-app-kit 0.3.2 — Zlib OR Apache-2.0 OR MIT
+Upstream notice: https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md
 Source: https://crates.io/crates/objc2-app-kit/0.3.2
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 7f976f7e9cb2d87d
 
 objc2-core-foundation 0.3.2 — Zlib OR Apache-2.0 OR MIT
+Upstream notice: https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md
 Source: https://crates.io/crates/objc2-core-foundation/0.3.2
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 7f976f7e9cb2d87d
 
 objc2-encode 4.1.0 — MIT
+Upstream notice: https://raw.githubusercontent.com/madsmtm/objc2/8d214f5477365ffcbcbb7de058c86ed9a518efb7/LICENSE.md
 Source: https://crates.io/crates/objc2-encode/4.1.0
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 7f976f7e9cb2d87d
 
 objc2-foundation 0.3.2 — MIT
+Upstream notice: https://raw.githubusercontent.com/madsmtm/objc2/7b1abfd750a2cacaea71d6a56ecfb83cb7de560b/LICENSE.md
 Source: https://crates.io/crates/objc2-foundation/0.3.2
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 7f976f7e9cb2d87d
 
 once_cell 1.21.4 — MIT OR Apache-2.0
 Source: https://crates.io/crates/once_cell/1.21.4
@@ -845,8 +856,9 @@ Source: https://crates.io/crates/quote/1.0.47
 Bundled notice IDs: 62c7a1e35f564068, 23f18e03dc49df91
 
 r-efi 6.0.0 — MIT OR Apache-2.0 OR LGPL-2.1-or-later
+Upstream notice: https://raw.githubusercontent.com/r-efi/r-efi/7e1b0322d31d625f81a5656096330934f9cd835d/AUTHORS
 Source: https://crates.io/crates/r-efi/6.0.0
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: d027e91dbc9cdbb2
 
 rand 0.10.3 — MIT OR Apache-2.0
 Source: https://crates.io/crates/rand/0.10.3
@@ -1285,8 +1297,9 @@ Source: https://crates.io/crates/uuid/1.27.0
 Bundled notice IDs: a60eea8175145316, 436bc5a105d8e57d
 
 valuable 0.1.1 — MIT
+Upstream notice: https://raw.githubusercontent.com/tokio-rs/valuable/9efc29b6e58cef28f6566a47aa7e142a55fead77/LICENSE
 Source: https://crates.io/crates/valuable/0.1.1
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: ed60d479b8fd1f64
 
 vcpkg 0.2.15 — MIT/Apache-2.0
 Source: https://crates.io/crates/vcpkg/0.2.15
@@ -1309,8 +1322,9 @@ Source: https://crates.io/crates/wasi/0.11.1+wasi-snapshot-preview1
 Bundled notice IDs: a60eea8175145316, 268872b9816f90fd, 23f18e03dc49df91
 
 wasite 0.1.0 — Apache-2.0 OR BSL-1.0 OR MIT
+Upstream notice: https://raw.githubusercontent.com/ardaku/wasite/0c72934ad329ab4670eb017581640c2d6eceb289/LICENSE_MIT.txt
 Source: https://crates.io/crates/wasite/0.1.0
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: 508a77d2e7b51d98
 
 wasm-bindgen 0.2.129 — MIT OR Apache-2.0
 Source: https://crates.io/crates/wasm-bindgen/0.2.129
@@ -1361,16 +1375,18 @@ Source: https://crates.io/crates/winapi/0.3.9
 Bundled notice IDs: b40930bbcf80744c, ce7bc3499fee93d5
 
 winapi-i686-pc-windows-gnu 0.4.0 — MIT/Apache-2.0
+Upstream notice: https://crates.io/crates/winapi/0.3.9 (same upstream project)
 Source: https://crates.io/crates/winapi-i686-pc-windows-gnu/0.4.0
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: ce7bc3499fee93d5
 
 winapi-util 0.1.11 — Unlicense OR MIT
 Source: https://crates.io/crates/winapi-util/0.1.11
 Bundled notice IDs: 01c266bced4a434d, cb3c929a05e6cbc9, 7e12e5df4bae12cb
 
 winapi-x86_64-pc-windows-gnu 0.4.0 — MIT/Apache-2.0
+Upstream notice: https://crates.io/crates/winapi/0.3.9 (same upstream project)
 Source: https://crates.io/crates/winapi-x86_64-pc-windows-gnu/0.4.0
-Bundled notice IDs: No standalone file in package; see source declaration
+Bundled notice IDs: ce7bc3499fee93d5
 
 windows-core 0.62.2 — MIT OR Apache-2.0
 Source: https://crates.io/crates/windows-core/0.62.2
@@ -9512,6 +9528,45 @@ DEALINGS IN THE SOFTWARE.
 
 
 ========================================================================
+NOTICE 7f976f7e9cb2d87d
+========================================================================
+# License
+
+The licensing of these crates is a bit complicated:
+- The crates `objc2`, `block2`, `objc2-foundation` and `objc2-encode` are
+  [currently][#23] licensed under [the MIT license][MIT].
+- All other crates are trio-licensed under the [Zlib], [Apache-2.0] or [MIT]
+  license, at your option.
+
+Furthermore, the crates are (usually automatically) derived from Apple SDKs,
+and that may have implications for licensing, see below for details.
+
+[#23]: https://github.com/madsmtm/objc2/issues/23
+[MIT]: https://opensource.org/license/MIT
+[Zlib]: https://zlib.net/zlib_license.html
+[Apache-2.0]: https://www.apache.org/licenses/LICENSE-2.0
+
+
+## Apple SDKs
+
+These crates are derived from Apple SDKs shipped with Xcode. You can obtain a
+copy of the Xcode license at:
+
+https://www.apple.com/legal/sla/docs/xcode.pdf
+
+Or by typing `xcodebuild -license` in your terminal.
+
+From reading the license, it is unclear whether distributing derived works
+such as these crates are allowed?
+
+But in any case, to practically use these crates, you will have to link, and
+that only works when you have the correct Xcode SDK available to provide the
+required `.tbd` files, which is why we choose to still use the normal SPDX
+identifiers in the crates (Xcode is required to use the crates, and when using
+Xcode you have already agreed to the Xcode license).
+
+
+========================================================================
 NOTICE 80f275e90d799911
 ========================================================================
 The MIT License (MIT)
@@ -15366,6 +15421,86 @@ SOFTWARE.
 
 
 ========================================================================
+NOTICE d027e91dbc9cdbb2
+========================================================================
+LICENSE:
+        This project is triple-licensed under the MIT License, the Apache
+        License, Version 2.0, and the GNU Lesser General Public License,
+        Version 2.1+.
+
+AUTHORS-MIT:
+        Permission is hereby granted, free of charge, to any person obtaining a
+        copy of this software and associated documentation files (the
+        "Software"), to deal in the Software without restriction, including
+        without limitation the rights to use, copy, modify, merge, publish,
+        distribute, sublicense, and/or sell copies of the Software, and to
+        permit persons to whom the Software is furnished to do so, subject to
+        the following conditions:
+
+        The above copyright notice and this permission notice shall be included
+        in all copies or substantial portions of the Software.
+
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+        OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+        CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+        TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+        SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+AUTHORS-ASL:
+        Licensed under the Apache License, Version 2.0 (the "License");
+        you may not use this file except in compliance with the License.
+        You may obtain a copy of the License at
+
+                http://www.apache.org/licenses/LICENSE-2.0
+
+        Unless required by applicable law or agreed to in writing, software
+        distributed under the License is distributed on an "AS IS" BASIS,
+        WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        See the License for the specific language governing permissions and
+        limitations under the License.
+
+AUTHORS-LGPL:
+        This program is free software; you can redistribute it and/or modify it
+        under the terms of the GNU Lesser General Public License as published
+        by the Free Software Foundation; either version 2.1 of the License, or
+        (at your option) any later version.
+
+        This program is distributed in the hope that it will be useful, but
+        WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+        Lesser General Public License for more details.
+
+        You should have received a copy of the GNU Lesser General Public License
+        along with this program; If not, see <http://www.gnu.org/licenses/>.
+
+COPYRIGHT: (ordered alphabetically)
+        Copyright (C) 2017-2023 Red Hat, Inc.
+        Copyright (C) 2019-2023 Microsoft Corporation
+        Copyright (C) 2022-2023 David Rheinsberg
+
+AUTHORS: (ordered alphabetically)
+        Alan Egerton <eggyal@gmail.com>
+        Alex James <theracermaster@gmail.com>
+        Ayush Singh <ayushsingh1325@gmail.com>
+        Boris-Chengbiao Zhou <bobo1239@web.de>
+        Bret Barkelew <bret@corthon.com>
+        Christopher Zurcher <christopher.zurcher@microsoft.com>
+        David Rheinsberg <david@readahead.eu>
+        Dmitry Mostovenko <trueberserker@gmail.com>
+        Hiroki Tokunaga <tokusan441@gmail.com>
+        Joe Richey <joerichey@google.com>
+        John Schock <joschock@microsoft.com>
+        Michael Kubacki <michael.kubacki@microsoft.com>
+        Oliver Smith-Denny <osde@microsoft.com>
+        Richard Wiedenhöft <richard@wiedenhoeft.xyz>
+        Rob Bradford <robert.bradford@intel.com>, <rbradford@rivosinc.com>
+        Tom Gundersen <teg@jklm.no>
+        Trevor Gross <tmgross@umich.edu>
+
+
+========================================================================
 NOTICE d1fc1bc0d155df60
 ========================================================================
 Copyright (c) 2016-2017 Isis Agora Lovecruft, Henry de Valence. All rights reserved.
@@ -16275,6 +16410,36 @@ DEALINGS IN THE SOFTWARE.
 
 
 ========================================================================
+NOTICE ed60d479b8fd1f64
+========================================================================
+Copyright (c) 2021 Valuable Contributors
+
+Permission is hereby granted, free of charge, to any
+person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the
+Software without restriction, including without
+limitation the rights to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software
+is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice
+shall be included in all copies or substantial portions
+of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
+IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
 NOTICE edd65bdd88957a20
 ========================================================================
 
@@ -16812,6 +16977,32 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+========================================================================
+NOTICE fea1d5bf3dd71605
+========================================================================
+The MIT License (MIT)
+
+Copyright (c) 2016 Prevoty, Inc. and jni-rs contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 
 ========================================================================

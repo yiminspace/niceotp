@@ -62,7 +62,9 @@ No client timestamps control updates or deletion.
 - Explicit mutations are processed even when the cursor is already current.
 - One mutation per item ID per batch, at most 128; negative/future cursors fail.
 - A repeated mutation ID with the same request returns its outcome; changed bodies
-  return 409. Conflicted mutations also reserve their IDs.
+  return 409. Conflicted mutations also reserve their IDs. Receipts retain a
+  SHA-256 fingerprint of PostgreSQL-normalized request JSON, not historical entry
+  ciphertext. Existing storage backups can still contain older encrypted records.
 - Conflicts do not apply. Other valid mutations in that batch commit together.
   A request/storage error rolls back **all** changes, including receipt/cursor writes.
 - A tombstone cannot be changed or recreated under the same ID, even with its

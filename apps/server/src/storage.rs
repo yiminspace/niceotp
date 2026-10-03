@@ -147,14 +147,14 @@ pub async fn sync(db: &PgPool, account: Uuid, input: SyncRequest) -> Result<Sync
     let mut conflicts = Vec::new();
     for m in input.mutations {
         let prior =
-            sqlx::query("SELECT request,revision FROM mutations WHERE account_id=$1 AND id=$2")
+            sqlx::query("SELECT revision, request_hash=encode(sha256(convert_to($3::jsonb::text, 'UTF8')), 'hex') AS matches FROM mutations WHERE account_id=$1 AND id=$2")
                 .bind(account)
                 .bind(m.mutation_id)
+                .bind(sqlx::types::Json(&m))
                 .fetch_optional(&mut *tx)
                 .await?;
         if let Some(prior) = prior {
-            let original = prior.get::<sqlx::types::Json<Mutation>, _>("request").0;
-            if original != m {
+            if !prior.get::<bool, _>("matches") {
                 return Err(Error::conflict("mutation_id_reused"));
             }
             let revision: i64 = prior.get("revision");
@@ -192,7 +192,7 @@ pub async fn sync(db: &PgPool, account: Uuid, input: SyncRequest) -> Result<Sync
         };
         if conflict {
             sqlx::query(
-                "INSERT INTO mutations (account_id,id,request,revision) VALUES ($1,$2,$3,0)",
+                "INSERT INTO mutations (account_id,id,request_hash,revision) VALUES ($1,$2,encode(sha256(convert_to($3::jsonb::text, 'UTF8')), 'hex'),0)",
             )
             .bind(account)
             .bind(m.mutation_id)
@@ -219,7 +219,7 @@ pub async fn sync(db: &PgPool, account: Uuid, input: SyncRequest) -> Result<Sync
             .ok_or_else(|| Error::bad("revision_exhausted"))?;
         sqlx::query("INSERT INTO items (account_id,id,revision,payload) VALUES ($1,$2,$3,$4) ON CONFLICT (account_id,id) DO UPDATE SET revision=EXCLUDED.revision,payload=EXCLUDED.payload")
             .bind(account).bind(m.id).bind(cursor).bind(m.payload.as_ref().map(sqlx::types::Json)).execute(&mut *tx).await?;
-        sqlx::query("INSERT INTO mutations (account_id,id,request,revision) VALUES ($1,$2,$3,$4)")
+        sqlx::query("INSERT INTO mutations (account_id,id,request_hash,revision) VALUES ($1,$2,encode(sha256(convert_to($3::jsonb::text, 'UTF8')), 'hex'),$4)")
             .bind(account)
             .bind(m.mutation_id)
             .bind(sqlx::types::Json(&m))

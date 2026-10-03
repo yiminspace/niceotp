@@ -102,7 +102,7 @@ pub async fn login(
                 let states:Vec<_>=params.iter().filter(|(k,_)|k=="state").collect();
                 let codes:Vec<_>=params.iter().filter(|(k,_)|k=="code").collect();
                 let valid=target.path()=="/callback" && states.len()==1 && codes.len()==1 && Sha256::digest(states[0].1.as_bytes())==Sha256::digest(state.secret().as_bytes());
-                let response=if valid {"HTTP/1.1 200 OK\r\nContent-Length: 37\r\nConnection: close\r\n\r\nLogin received. Return to the terminal."} else {"HTTP/1.1 400 Bad Request\r\nContent-Length: 0\r\nConnection: close\r\n\r\n"};
+                let response=if valid {"HTTP/1.1 200 OK\r\nContent-Length: 39\r\nConnection: close\r\n\r\nLogin received. Return to the terminal."} else {"HTTP/1.1 400 Bad Request\r\nContent-Length: 0\r\nConnection: close\r\n\r\n"};
                 stream.write_all(response.as_bytes()).await?;
                 if valid {return Ok::<_,anyhow::Error>(codes[0].1.to_string());}
             }
