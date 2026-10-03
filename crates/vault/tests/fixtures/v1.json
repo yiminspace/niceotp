@@ -1,0 +1,78 @@
+{
+  "backup": {
+    "aad_base64url": "bmljZW90cAB2MQAAAAAPYmFja3VwLW1hbmlmZXN0ABEiM0RVRneImaq7zN3u_wAAAbt7ImZvcm1hdF92ZXJzaW9uIjoxLCJ2YXVsdF9pZCI6IjAwMTEyMjMzLTQ0NTUtNDY3Ny04ODk5LWFhYmJjY2RkZWVmZiIsInBhc3N3b3JkIjp7ImtkZiI6eyJzYWx0IjoiQUFFQ0F3UUZCZ2NJQ1FvTERBME9EdyIsIm1lbW9yeV9raWIiOjY1NTM2LCJpdGVyYXRpb25zIjozLCJwYXJhbGxlbGlzbSI6MX0sInNlYWxlZCI6eyJub25jZSI6IkFBRUNBd1FGQmdjSUNRb0xEQTBPRHhBUkVoTVVGUllYIiwiY2lwaGVydGV4dCI6ImlWRHMzOEJRZzBHb2M4TFFVVXZsdElBTHN3NlU4MnY0MWdhNGQyRlNFb2pvSUxKZ2pkdElkWEwtdk9IYXM2UWwifX0sInJlY292ZXJ5Ijp7Im5vbmNlIjoiR0JrYUd4d2RIaDhnSVNJakpDVW1KeWdwS2lzc0xTNHYiLCJjaXBoZXJ0ZXh0IjoiSUhCdXdOeUNmNnVNYTBTcmZxYXh0QTJ0YTNqbHRVdENDMER1dVJ2czk0YmdVaFNYY0tRaFE5bzBVZ2xoYzFBUSJ9fQ",
+    "envelope": {
+      "format_version": 1,
+      "header": {
+        "format_version": 1,
+        "password": {
+          "kdf": {
+            "iterations": 3,
+            "memory_kib": 65536,
+            "parallelism": 1,
+            "salt": "AAECAwQFBgcICQoLDA0ODw"
+          },
+          "sealed": {
+            "ciphertext": "iVDs38BQg0Goc8LQUUvltIALsw6U82v41ga4d2FSEojoILJgjdtIdXL-vOHas6Ql",
+            "nonce": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYX"
+          }
+        },
+        "recovery": {
+          "ciphertext": "IHBuwNyCf6uMa0SrfqaxtA2ta3jltUtCC0DuuRvs94bgUhSXcKQhQ9o0Uglhc1AQ",
+          "nonce": "GBkaGxwdHh8gISIjJCUmJygpKissLS4v"
+        },
+        "vault_id": "00112233-4455-4677-8899-aabbccddeeff"
+      },
+      "sealed": {
+        "ciphertext": "zvvXSSRlNVx8YZhdchls0BDEqgAsOZcFNHhUVK8KRoeIhbo5jbYR7w1IzvtYWW7IkR694-8mZuqYpY3r7JjB1-q5kNuepIQSZEha8f3Jp-C9pPyE2l9cEWsT11InJ9qb5Tf5kxQDlzci72kQXdRZNRzkFVqQaBqY1jm_OdppdSmWXcPTzvfm9CADKSEm6JAXQCdGECsmhA6TEss6FQoYL1Mkf5EwLt0M_chFmmrBGc7RzlOrDKWmnVUKd4-AVwaeR85eyfnN-aHIxZo9XIxBgSMfpNdJUPcZGUV_S5NPAlPsYShnOgRjxQF2OFHd2PlzoeVidJiUGnVuYeqIOKuI9aBN2yyH1NHqBrYKSpJKFV9h7MAnitLN0OpL1R8I5vYmWRlAVklbBNxEaW17qvFE8POG9JXrf8xB2gCfHiPaLxGG0iWP-jxkApU4a0qfLLfLJgEQqgZUBnQsFh4zpD_P9UVjSwxvuQI8_CBck4BcvkwowRVMA9VzHIuvx2c6xsgc2L66cy3YGHdEagyLm9dKoxPF3cwrAtXhTV9cBx507kLSEYZRrpTziGe_czCdx-lhGeqO2_m4Ce2bWHgAkTQaUtRmTlXSYDBDy7OTvADvGbkXqbmgJ1XQ_uAowF4m65kDvf2bhommIaDNWccMyB0fWwWZvLJ79yz2jC1luyoE3iV6iJTp35Cm5ZEXdRpT2_6Xu3Qab7H39xZ8lctYkHKKffs7BMxu0tKmosJBKtGUX3jYd5Ym_Q03ybP5cOPPXDrUaVi5uY--18Ftlk4aS8m6GMg0FyFPwOQNu-73UHysipzCVNieK-8SHWORUbbfdFRWoseOdGpjlN7KWoAStxHRVYCQRnnqY3M4X-etZcH470Y8owgJekSXkhcVdWkun8t9UaxXetGkSINglXcz3fEM9P6dr69KHRMH1OKLelcUodyVQnE0QzNRB_QgMNWdJcVpLY436BeoILEQ4yw2f71a6VS86rg0TufOhhkKX6Y6TNQLVYBWNJY-UKard5ahrhOwHsg6e0igCj9u6TNCosbVEjZHWLMQVSVeKAVBKyv_xxkdyTre7XJf720NrnbFH0uXxuk05sE7-Xgl95RnXAnhAZQQgEKPMCEKNIJHXBe9098v8TPJ0JBlm0hTqEEmz5yi9RBk-MfPxppkJCIQQeu55XpE5gnRCrffWjRZnczkFNi8yTik64qZIcwgOZI_asrrFqCPV5GefPxDNYD5OzOCSQVfu_FCun_xZpHtd95PezwqCnO8GFleNzVj08b5uZr99lXwp24wrkSBsr1ivhBE2aASLeoomkbPb5iDMDHsqdfvFw",
+        "nonce": "YGFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3"
+      }
+    },
+    "plaintext_utf8": "{\"format_version\":1,\"header\":{\"format_version\":1,\"vault_id\":\"00112233-4455-4677-8899-aabbccddeeff\",\"password\":{\"kdf\":{\"salt\":\"AAECAwQFBgcICQoLDA0ODw\",\"memory_kib\":65536,\"iterations\":3,\"parallelism\":1},\"sealed\":{\"nonce\":\"AAECAwQFBgcICQoLDA0ODxAREhMUFRYX\",\"ciphertext\":\"iVDs38BQg0Goc8LQUUvltIALsw6U82v41ga4d2FSEojoILJgjdtIdXL-vOHas6Ql\"}},\"recovery\":{\"nonce\":\"GBkaGxwdHh8gISIjJCUmJygpKissLS4v\",\"ciphertext\":\"IHBuwNyCf6uMa0SrfqaxtA2ta3jltUtCC0DuuRvs94bgUhSXcKQhQ9o0Uglhc1AQ\"}},\"items\":[{\"id\":\"10213243-5465-4768-99aa-bbccddeeff00\",\"revision\":7,\"payload\":{\"nonce\":\"MDEyMzQ1Njc4OTo7PD0-P0BBQkNERUZH\",\"ciphertext\":\"KXtBx7e_dyT4zjMnpiSQYAOdPyLzdalWiM5UdkdZP2IpUPTCq7aYNNqgSF63YLdpmD5yuANbDQhJ684dW6G8aouVlPs6orxZ-5oVgVlwynMIy3bjlEQeLJaAuslGwmXtfJv10ZxZb9a0HmCjIPrt2rxh1Pa7eBjUlWqNsIGIXfKOrnQp93CtTUfU3ofjy4oA_oBTAViQnyBlrrEMUZ-eOzVXU3uuiFplf0rIXE-DlxxdUM6Slm2nXzPDE5TbfFBSU-2n-bToMZUYNPgkHqUGifA9I-ke1O2eCd8\"}},{\"id\":\"20314253-6475-4879-aabb-ccddeeff0011\",\"revision\":8,\"payload\":null}]}"
+  },
+  "description": "PUBLIC TEST DATA ONLY. Fixed keys and nonces are unsafe for real vaults.",
+  "entry": {
+    "aad_base64url": "bmljZW90cAB2MQAAAAAFZW50cnkAESIzRFVGd4iZqrvM3e7_AAAAEBAhMkNUZUdomaq7zN3u_wA",
+    "item_id": "10213243-5465-4768-99aa-bbccddeeff00",
+    "plaintext_utf8": "{\"name\":\"Public Example:alice@example.test\",\"account\":\"alice@example.test\",\"issuer\":\"Public Example\",\"secret\":\"JBSWY3DPEHPK3PXP\",\"algorithm\":\"SHA1\",\"digits\":6,\"period\":30,\"pinned\":false,\"trashed\":false}",
+    "sealed": {
+      "ciphertext": "KXtBx7e_dyT4zjMnpiSQYAOdPyLzdalWiM5UdkdZP2IpUPTCq7aYNNqgSF63YLdpmD5yuANbDQhJ684dW6G8aouVlPs6orxZ-5oVgVlwynMIy3bjlEQeLJaAuslGwmXtfJv10ZxZb9a0HmCjIPrt2rxh1Pa7eBjUlWqNsIGIXfKOrnQp93CtTUfU3ofjy4oA_oBTAViQnyBlrrEMUZ-eOzVXU3uuiFplf0rIXE-DlxxdUM6Slm2nXzPDE5TbfFBSU-2n-bToMZUYNPgkHqUGifA9I-ke1O2eCd8",
+      "nonce": "MDEyMzQ1Njc4OTo7PD0-P0BBQkNERUZH"
+    }
+  },
+  "header": {
+    "format_version": 1,
+    "password": {
+      "kdf": {
+        "iterations": 3,
+        "memory_kib": 65536,
+        "parallelism": 1,
+        "salt": "AAECAwQFBgcICQoLDA0ODw"
+      },
+      "sealed": {
+        "ciphertext": "iVDs38BQg0Goc8LQUUvltIALsw6U82v41ga4d2FSEojoILJgjdtIdXL-vOHas6Ql",
+        "nonce": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYX"
+      }
+    },
+    "recovery": {
+      "ciphertext": "IHBuwNyCf6uMa0SrfqaxtA2ta3jltUtCC0DuuRvs94bgUhSXcKQhQ9o0Uglhc1AQ",
+      "nonce": "GBkaGxwdHh8gISIjJCUmJygpKissLS4v"
+    },
+    "vault_id": "00112233-4455-4677-8899-aabbccddeeff"
+  },
+  "local_state": {
+    "aad_base64url": "bmljZW90cAB2MQAAAAAFYnl0ZXMAESIzRFVGd4iZqrvM3e7_AAAADmxvY2FsLXN0YXRlOnYx",
+    "context": "local-state:v1",
+    "plaintext_utf8": "public interoperability fixture",
+    "sealed": {
+      "ciphertext": "0A4fi5pL7uuwkZqBQ7b1g4tM4mDLmY8JpFB0dylBILeQaCpX6JEcc-oi-LXTYyc",
+      "nonce": "SElKS0xNTk9QUVJTVFVWV1hZWltcXV5f"
+    }
+  },
+  "password": "NiceOTP public test password",
+  "password_aad_base64url": "bmljZW90cAB2MQAAAAANcGFzc3dvcmQtd3JhcAARIjNEVUZ3iJmqu8zd7v8AAABTeyJzYWx0IjoiQUFFQ0F3UUZCZ2NJQ1FvTERBME9EdyIsIm1lbW9yeV9raWIiOjY1NTM2LCJpdGVyYXRpb25zIjozLCJwYXJhbGxlbGlzbSI6MX0",
+  "password_key_base64url": "DkDFSteIzGMMPJICkadzOpK2tyvPHuKkxT5jvY2UIpA",
+  "recovery_aad_base64url": "bmljZW90cAB2MQAAAAANcmVjb3Zlcnktd3JhcAARIjNEVUZ3iJmqu8zd7v8AAAAA",
+  "recovery_code": "ICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj8",
+  "vault_key_base64url": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8"
+}

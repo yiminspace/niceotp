@@ -1,0 +1,20 @@
+# Local development only. Run the Rust server on the host so the same loopback
+# issuer URL is reachable by both the server and the user's browser.
+services:
+  postgres:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_DB: niceotp_test
+      POSTGRES_USER: niceotp
+      POSTGRES_PASSWORD: local-development-only
+    ports: ['127.0.0.1:55439:5432']
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U niceotp -d niceotp_test']
+      interval: 3s
+      timeout: 3s
+      retries: 10
+  dex:
+    image: ghcr.io/dexidp/dex:v2.45.1
+    command: [dex, serve, /etc/dex/config.yaml]
+    volumes: ['./dex.yaml:/etc/dex/config.yaml:ro']
+    ports: ['127.0.0.1:5556:5556']

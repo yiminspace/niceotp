@@ -1,0 +1,18 @@
+# Public local demo credentials. Never expose this configuration on a network.
+issuer: http://127.0.0.1:5556/dex
+storage:
+  type: memory
+web:
+  http: 0.0.0.0:5556
+staticClients:
+  - id: niceotp-cli
+    name: NiceOTP CLI
+    public: true
+    redirectURIs:
+      - http://127.0.0.1:43673/callback
+enablePasswordDB: true
+staticPasswords:
+  - email: demo@example.test
+    hash: "$2y$10$xK8rdeNzboGbe2xBcn1so.4wh.JuyLaHSRQISNwacEDh9ptnL2kYu"
+    username: demo
+    userID: 40c16dd4-774c-43c8-bf1d-c961a6273b13

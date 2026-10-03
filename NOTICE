@@ -1,0 +1,13 @@
+NiceOTP
+Copyright 2026 NiceOTP contributors
+
+This project is independently implemented using public specifications and
+publicly licensed dependencies. No proprietary source code, internal deployment
+configuration or private documentation is included or required.
+
+Third-party dependencies retain their respective licenses. Cargo.lock records
+exact dependency versions. The main cryptographic primitives are supplied by the
+RustCrypto ecosystem; protocol references and interoperability fixtures are in
+docs/cryptography.md. The local Dex example uses a separately distributed Dex
+image under its own license. Synthetic RFC6238 test values and public local demo
+credentials are not production secrets.

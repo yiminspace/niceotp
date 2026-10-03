@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:17-bookworm
+    environment:
+      POSTGRES_DB: niceotp
+      POSTGRES_USER: niceotp
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U niceotp -d niceotp']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    restart: unless-stopped
+  server:
+    build: .
+    ports:
+      - '127.0.0.1:8080:8080'
+    environment:
+      DATABASE_URL: postgres://niceotp:${POSTGRES_PASSWORD}@postgres/niceotp
+      OIDC_ISSUER: ${OIDC_ISSUER:?Set OIDC_ISSUER in .env}
+      OIDC_CLIENT_ID: ${OIDC_CLIENT_ID:-niceotp-cli}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+volumes:
+  postgres:
